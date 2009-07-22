@@ -1,0 +1,31 @@
+./All other forcings/B..2003-10Be.txt
+./All other forcings/B..2003-14C.txt
+./All other forcings/CBK..2003.txt
+./All other forcings/GRT..2005.txt
+./All other forcings/GSZ2003.txt
+./All other forcings/TBC..2006.txt
+./Solar irradiance forcing/AJS..2006.txt
+./Solar irradiance forcing/BLC..2002.txt
+./Solar irradiance forcing/CBK..2003.txt
+./Solar irradiance forcing/GJB..2003.txt
+./Solar irradiance forcing/GRT..2005.txt
+./Solar irradiance forcing/GSZ2003.txt
+./Solar irradiance forcing/TBC..2006.txt
+./Temperature anomaly/AJS..2006.txt
+./Temperature anomaly/B..2003-10Be.txt
+./Temperature anomaly/B..2003-14C.txt
+./Temperature anomaly/BLC..2002.txt
+./Temperature anomaly/CBK..2003.txt
+./Temperature anomaly/GBZ..2006.txt
+./Temperature anomaly/GJB..2003.txt
+./Temperature anomaly/GRT..2005.txt
+./Temperature anomaly/GSZ2003.txt
+./Temperature anomaly/ORB2006.txt
+./Temperature anomaly/SMC2006.txt
+./Temperature anomaly/TBC..2006.txt
+./Volcanic forcing/AJS..2006.txt
+./Volcanic forcing/BLC..2002.txt
+./Volcanic forcing/CBK..2003.txt
+./Volcanic forcing/GRT..2005.txt
+./Volcanic forcing/GSZ2003.txt
+./Volcanic forcing/TBC..2006.txt
