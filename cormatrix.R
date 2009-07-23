@@ -1,5 +1,6 @@
 climate <- read.csv("/Users/kd/Desktop/climatekaraoke/Climate-Karaoke/all_data.csv")
-climate.summary <- climate[c(1,2,3,4,5,8,9)]
+climate$co2.log.diff <- log(climate$co2_mean-270)
+climate.summary <- climate[grep("^[A-Z][A-Z]+|co2_mean|co2.log",names(climate))] 
 
 
 panel.cor <- function(x, y, digits=2, prefix="", cex.cor) 
