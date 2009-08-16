@@ -13,7 +13,11 @@ climate <- read.csv("all_data.csv")
 climate <- zoo(climate[,-1], order.by=climate$Year)
 
 # Strip out just IPCC anomaly and CO2 series
-anom <- na.omit(climate[ ,c("ANOMALY", "co2_mean")])
+ipcc <- na.omit(climate[ ,c("ANOMALY", "co2_mean")])
+png("ipcc-acf.png", width=500, height=300)
+par(mar=c(4.5,5,1,1))
+acf(as.ts(ipcc$ANOMALY), main="")
+dev.off()
 
 # Stip our IPCC and UAH anomalies
 min.year <- min(time(climate)[!is.na(climate$nih)])
@@ -59,3 +63,7 @@ legend(1996, -0.06, legend=c("UAH series", "Spline", "Lowess"),
 	lwd=1, col=c("black", "blue", "green"), bty="n")
 dev.off()
 
+# Some statistical tests
+print(Box.test(ipcc$ANOMALY, type="Ljung-Box"))
+print(Box.test(uah$ANOMALY, type="Ljung-Box"))
+print(Box.test(uah$nih, type="Ljung-Box"))
